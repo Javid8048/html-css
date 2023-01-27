@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div.card {
+                width: 250px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                text-align: center;
+            }
+            div.card:hover {
+                transform: rotate(45deg); 
+            }
+            div.header {
+                background-color: #4caf50;
+                color: azure;
+                padding: 10px;
+                font-size: 40px;
+            }
+            div.container {
+                padding: 10px;
+            }
+            body {
+                background-color: purple;
+                background-image: linear-gradient(red, blue);
+                background-repeat: no-repeat;
+                height: 100vh;
+            }
+            .link {
+                width: 100px;
+                height: 30px;
+                background-color: aliceblue;
+                color: black;
+                transition: width 2s, height 4s, transform 2s;
+            }
+            .link:hover {
+                width: 300px;
+                height: 100px;
+                transform: rotate(360deg);
+            }
+            #example {
+                background-color: blanchedalmond;
+                color: black;
+                width: 300px;
+                height: 100px;
+                animation-duration: 4s;
+                animation-name: para;
+            }
+            @keyframes para {
+                from {background-color: blanchedalmond; color: black;}
+                to {background-color: purple; color:yellow;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="link">
+            <a>HOME</a>
+        </div>
+        <h1>Create Cards</h1>
+        <p>Box Shadow</p>
+        <div class="card">
+            <div class="header">
+                APM
+            </div>
+            <div class="container">
+                <p>APM KINGS TRACK</p>
+            </div>
+        </div>
+        <div id="example">
+            <p>i done this using<br>HTML & CSS</p>
+        </div>
+        <div>I am an  Tool Tip
+            <span>JAVID ASHWAQ F</span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<p id="Demo3"></p>
+	<p id="Demo4"></p>
+	<p id="Demo5"></p>
+	<p id="Demo6"></p>
+	<p id="Demo7"></p>
+	<p id="Demo8"></p>
+	<p id="Demo_BigInt"></p>
+		
+	<script>
+	let x=10;
+	{
+	let x=20;
+	}
+	document.getElementById("Demo3").innerHTML="x is "+x;
+	
+	let text="Hello"; text+=" World";
+	document.getElementById("Demo4").innerHTML=text;
+	
+	let y=50;
+	document.getElementById("Demo5").innerHTML= y+" "+x;
+	
+	let Assign = 16 + 4 + "Volvo";
+	let Assign2 = "Volvo" + 16 + 4;
+	document.getElementById("Demo6").innerHTML=Assign;
+	document.getElementById("Demo7").innerHTML=Assign2;
+	
+	let xx = 123e5;
+	let xxx = 123e-5;
+	document.getElementById("Demo8").innerHTML=xx+" "+xxx; 
+	
+	let xxxx = BigInt("123456789012345678901234567890");
+	document.getElementById("Demo_BigInt").innerHTML=xxxx;
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<p>Template Array</p>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<h1>Here Array had been Looped </h1>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<h3 id="demo6"></h3>
+	
+	<script>
+		let city=["Hyd", "Chennai", "Goa", "Kerala", "Andhra"];
+		let length=city.length;
+		document.getElementById("demo").innerHTML=length;
+		document.getElementById("demo2").innerHTML=city[0];
+		document.getElementById("demo3").innerHTML=city[city.length-1];
+		
+		let text = "<ul>";
+		for(let i=0; i<length; i++) {
+			text+="<li>"+city[i]+"</li>";
+		}
+		text+="</ul>"
+		document.getElementById("demo4").innerHTML=text;
+		city.push("Delhi");
+		document.getElementById("demo5").innerHTML=city.toString();
+		document.getElementById("demo6").innerHTML=typeof city;
+		
+		
+	</script>
+</body>
+</html>

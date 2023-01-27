@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>	
+	<h2>JavaScript Object</h2>
+	<p>we can use person.property or person["property"].</p>
+	<p id="demo"></p>
+	
+	<p id="demo2"></p>
+	<button onclick = "document.getElementById('demo2').innerHTML=Date()">The Time is </button>
+		
+	<p id="demo3"></p>
+	<button onmouseover =
+	"document.getElementById('demo2').innerHTML=Date()">The time is?</button>
+	
+	<script>
+		const person = {
+			firstName: "JAVID",
+			lastName: "ASHWAQ",
+			id : 8048
+		};
+		
+	document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName;
+	
+	</script>	
+	
+</body>
+</html>
